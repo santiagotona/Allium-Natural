@@ -118,7 +118,26 @@
 						<h2>Quieres mas informacion?</h2>
 						<p>Contactenos ahora mismo para saber donde nos puedes encontrar <br>Tambien contamos con entrega a domicilio en la cdmx (entregas muy lejanas se cobra por entrega)</p>
 					</div>
-					<a class="btn" href="contacto.html">Consultar</a>
+					<a id="consultar-btn" class="btn" href="#home">Consultar</a>
+					<script>
+						// Función para desplazarse suavemente hacia arriba
+						function scrollToTop() {
+							window.scrollTo({
+								top: 0,
+								behavior: 'smooth'
+							});
+						}
+				
+						// Agregar evento clic al botón de consultar
+						document.getElementById('consultar-btn').addEventListener('click', function(event) {
+							// Prevenir el comportamiento predeterminado del enlace
+							event.preventDefault();
+							// Desplazarse hacia arriba
+							scrollToTop();
+							// Destacar el botón de WhatsApp
+							document.querySelector('.whatsapp-btn').classList.add('highlight');
+						});
+					</script>
 				</div>
 			</section>
 		</article>
