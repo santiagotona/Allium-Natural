@@ -654,3 +654,8 @@ aside {
 #pages {
 	font-size: 20px;
 }
+.highlight {
+            background-color: #4cf584;
+            color: #fff;
+            transition: background-color 4.3s ease;
+        }
